@@ -31,6 +31,7 @@
     <!--[if lt IE 9]>
         <script src="html5shiv.js"></script>
         <script src="respond.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <![endif]-->
 
 	<style type="text/css">
@@ -51,7 +52,21 @@
 		text-align: center;
 		margin-top: 0px;
 	}
+	.auto-style3 {
+		color: #000000;
+	}
 	</style>
+	
+	<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("h5").hide();
+    });
+    $("#show").click(function(){
+        $("h5").show();
+    });
+});
+</script>
 
 </head>
 
@@ -76,22 +91,22 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" style="color: fuchsia" href="#pelayanan">Pelayanan</a>
+                        <a class="page-scroll" style="color:blue" href="#pelayanan">Pelayanan</a>
                     </li>
                     <li>
-                        <a class="page-scroll" style="color:fuchsia" href="#aktivitas">Aktivitas</a>
+                        <a class="page-scroll" style="color:blue" href="#aktivitas">Aktivitas</a>
                     </li>
                     <li>
-                        <a class="page-scroll" style="color:fuchsia" href="#tentangkami">Tentang Kami</a>
+                        <a class="page-scroll" style="color:blue" href="#tentangkami">Tentang Kami</a>
                     </li>
                     <li>
-                        <a class="page-scroll" style="color:fuchsia" href="#timbpai">Tim BPAI</a>
+                        <a class="page-scroll" style="color:blue" href="#timbpai">Tim BPAI</a>
                     </li>
                     <li>
-                        <a class="page-scroll" style="color:fuchsia" href="#testimoni">Testimoni</a>
+                        <a class="page-scroll" style="color:blue" href="#testimoni">Testimoni</a>
                     </li>
                     <li>
-                        <a class="page-scroll" style="color:fuchsia" href="#contact">Kontak</a>
+                        <a class="page-scroll" style="color:blue" href="#contact">Kontak</a>
                     </li>
                 </ul>
             </div>
@@ -106,7 +121,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Homeschooling BPAI Depok</div>
                 <div class="intro-heading">Selamat datang</div>
-                <a href="#pelayanan" class="page-scroll btn btn-xl" style="background-color: #E7FF00; color: #FF00FF;">Informasi 
+                <a href="#pelayanan" class="page-scroll btn btn-xl" style="background-color: #E7FF00; color:blue;">Informasi 
 				lebih lanjut</a>
             </div>
         </div>
@@ -130,15 +145,19 @@
 					TK, SD, SMP dan SMA, dengan sistem pembelajaran individual 
 					untuk mengasah perkembangan emosi, sosial, dan kognitif 
 					siswa. selain itu kami juga mengasah kemampuan lifeskill 
-					siswa, individual differences, kemandirian dan nilai moral.[<a href="proyekvideo.html">Video</a>]</p>
+					siswa, individual differences, kemandirian dan nilai moral.
                 </div>
                 <div class="col-md-4" style="left: 0px; top: -47px; height: 417px">
                     <img src="img/terapi.png" height="171" width="182">
-                    <h4 class="service-heading">Terapi</h4>
+                    <h4 class="service-heading">
+					<a class="auto-style3" href="https://youtu.be/8IOW0dg7ex4">Terapi</a></h4>
                     <p class="text-muted">Dengan terapi individual yang 
 					merupakan program pendukung untuk memfasilitasi perkembangan 
 					anak sesuai usaianya. Para terapis BPAI merupakan praktisi 
 					terapi profesional berpengalaman yang bersertifikat profesi.</p>
+					<a href="img/arkan.mp4"></a>
+					<button id="show">Show</button>
+					
                 </div>
                  <div class="col-md-4" style="left: 0px; top: -43px; height: 413px">
                     <img src="img/konsultasi.png" height="171" width="182">
@@ -172,7 +191,8 @@
                         <img src="img/portfolio/sekolah.jpg" class="auto-style1" alt="" height="255" width="361" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Akademik</h4>
+                        <h4>
+						<a href="https://www.youtube.com/watch?v=c_bl9Ghs7Pw" class="auto-style3">Akademik</a></h4>
                         <p class="text-muted">Memaksimalkan kemampuan anak autistik dalam menyerap informasi dengan belajar.</p>
                     </div>
                 </div>
@@ -186,7 +206,8 @@
                         <img src="img/portfolio/lifeskill.jpg" class="auto-style1" alt="" height="255" width="361" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Lifeskill</h4>
+                        <h4>
+						<a href="https://www.youtube.com/watch?v=ZYXnuFFvfLg" class="auto-style3">Lifeskill</a></h4>
                         <p class="text-muted">Mengembangkan kemandirian anak terutama untuk membantu dirinya sendiri.</p>
                     </div>
                 </div>
@@ -200,8 +221,9 @@
                         <img src="img/portfolio/olahraga.jpg" class="auto-style1" alt="" height="255" width="361" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Olahraga</h4>
-                        <p class="text-muted">Berbagai hal kami buat menyenangkan, dan bagi kami olahraga itu bermain.</p>
+                        <h4>
+						<a href="https://www.youtube.com/watch?v=QBCqA2xTb14" class="auto-style3">Olahraga</a></h4>
+                        <p class="text-muted">Mengenal berbagai bentuk cabang olahraga membuat variasi dalam akivitas.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -214,7 +236,8 @@
                         <img src="img/portfolio/autism.jpg" class="auto-style1" alt="" height="255" width="361" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Autism Awareness</h4>
+                        <h4>
+						<a href="https://www.youtube.com/watch?v=2vVXigcVtuU" class="auto-style3">Autism Awareness</a></h4>
                         <p class="text-muted">Acara besar kami tiap tahunnya mengingatkan kami bahwa kami saling memiliki satu sama lain.</p>
                     </div>
                 </div>
@@ -228,7 +251,8 @@
                         <img src="img/portfolio/seni.jpg" class="auto-style1" alt="" height="255" width="361" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Pentas Seni</h4>
+                        <h4>
+						<a href="https://www.youtube.com/watch?v=qFqolZdKZUQ" class="auto-style3">Pentas Seni</a></h4>
                         <p class="text-muted">Mengembangkan kepercayaan diri melalui seni dan menuju prestasi.</p>
                     </div>
                 </div>
@@ -242,7 +266,8 @@
                         <img src="img/portfolio/outing.jpg" class="auto-style1" alt="" height="255" width="361" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Outing BPAI</h4>
+                        <h4>
+						<a href="https://www.youtube.com/watch?v=dpFRMjr-UYw" class="auto-style3">Outing BPAI</a></h4>
                         <p class="text-muted">Kami belajar dengan mengenal dunia nyata diluar sana. Dan kami BISA!</p>
                     </div>
                 </div>
@@ -301,7 +326,7 @@
 									berkebutuhan khusus dengan tanpa harus 
 									menghilangkan esensi suasana di rumah yang 
 									penuh kehangatan seperti di rumah sendiri.</p>
-                                </div>
+							    </div>
                             </div>
                         </li>
                         <!--<li class="timeline-inverted">-->
@@ -384,7 +409,7 @@
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/fitri.wahyuni1?fref=tl_fr_box&pnref=lhc.friends"> <i class="fa fa-facebook"></i></a>
                             </li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -399,7 +424,8 @@
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/ryan.rahmalia?fref=ts">
+                            				<i class="fa fa-facebook"></i></a>
                             </li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -415,7 +441,8 @@
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/lyla.sari?fref=pb&hc_location=friends_tab">
+                            				<i class="fa fa-facebook"></i></a>
                             </li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -430,7 +457,8 @@
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/selviana.nuryanti?fref=ts">
+                            				<i class="fa fa-facebook"></i></a>
                             </li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -461,7 +489,8 @@
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/qurrotaa">
+                            				<i class="fa fa-facebook"></i></a>
                             </li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -476,7 +505,8 @@
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/bayu.gwynt?fref=ts">
+                            				<i class="fa fa-facebook"></i></a>
                             </li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -701,7 +731,7 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Dokumentasi Siswa BPAI</h2>
-                            <p class="item-intro text-muted">Disaat jam istirahat smua terlibat bermain bersama.</p>
+                            <p class="item-intro text-muted">Membahas soal bersama guru membuat proses belajar lebih efektif bagi kami.</p>
                             <video class="img-responsive img-centered" source src="img/mtk.mp4" width="960" height="720" controls alt="">
                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                             <p>
@@ -733,7 +763,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Dokumentasi Siswa BPAI</h2>
-                            <p class="item-intro text-muted">Therapy yang konsisten akan mempercepat kemajuan anak kita</p>
+                            <p class="item-intro text-muted">Activity Daily Learning membuat kami berlatih mandiri dari hal yang kecil.</p>
                             <video class="img-responsive img-centered" source src="img/sikatgigi.mp4" width="960" height="720" controls alt="">
                             <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
                             <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
@@ -760,8 +790,8 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Dokumentasi Siswa BPAI</h2>
-                            <p class="item-intro text-muted">Didalam tubuh yang sehat terdapat jiwa yang kuat, kegiatan olahraga pun dibuat dengan menyenangkan</p>
-                            <video class="img-responsive img-centered" source src="img/Olahraga.mp4" width="960" height="720" controls alt="">
+                            <p class="item-intro text-muted">Berbagai hal kami buat menyenangkan, dan bagi kami olahraga itu bermain</p>
+                            <video class="img-responsive img-centered" source src="img/main.mp4" width="960" height="720" controls alt="">
                             <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
                             <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -842,7 +872,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Dokumentasi Siswa BPAI</h2>
                             <p class="item-intro text-muted">Bersosialisasi dengan semua orang dan juga dengan semua makhluk hidup.</p>
-                            <video class="img-responsive img-centered" source src="img/lumba.mp4" width="960" height="720" alt="">
+                            <video class="img-responsive img-centered" source src="img/safari.mp4" width="960" height="720" controls alt="">
                             
                         </div>
                     </div>
